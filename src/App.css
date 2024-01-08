@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h100 {
+  height: calc(100vh - 64px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #001529;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 30px;
+}
+
+.logo {
+  display: flex;
+}
+
+.top-menu {
+  flex: 1;
+  min-width: 0;
+}
+
+.username-box {
+  color: #fff;
+  display: flex;
+}
+
+.username {
+  text-transform: uppercase;
+}
+
+.login,
+.logout {
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.randomizer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.randomizer h1 {
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.colors-picker {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70px;
+  gap: 10px;
+}
+
+.color-box {
+  height: 30px;
+  width: 30px;
+}
+
+.color-box:hover {
+  transform: scale(1.25);
 }
